@@ -3,7 +3,7 @@
 
 <div class="jumbotron">
   <h1>SPU DEVELOPERS</h1>
-  <p>Welcome Statement...</p>
+  <p>The very best of Seattle</p>
   <p><a class="btn btn-default btn-lg" href="#" role="button">Learn more</a></p>
 </div>
 

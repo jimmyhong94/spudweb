@@ -8,7 +8,7 @@
         <li class="active"><a href="../index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
         <li><a href="../events.php"><span class="glyphicon glyphicon-calendar"></span>EVENTS</a></li>
         <li><a href="../projects.php"><span class="glyphicon glyphicon-folder-open"></span>PROJECTS</a></li>
-        <li><a href="../about"><span class="glyphicon glyphicon-cloud"></span>ABOUT</a></li>
+        <li><a href="../about.php"><span class="glyphicon glyphicon-cloud"></span>ABOUT</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-plus"></span>JOIN</a></li>
