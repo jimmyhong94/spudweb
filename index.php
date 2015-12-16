@@ -1,4 +1,4 @@
-<?php require_once "include/header.html"; ?>
+<?php require_once "include/header.php"; ?>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
