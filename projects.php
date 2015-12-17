@@ -1,2 +1,2 @@
-<?php require "include/header.php"; ?>
-<?php require "include/navigation.php"; ?>
+<?php require_once 'include/header.php'; ?>
+<?php require_once 'include/navigation.php'; ?>
