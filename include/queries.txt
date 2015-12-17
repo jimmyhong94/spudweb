@@ -1,0 +1,3 @@
+Adding event query:
+INSERT INTO events (event_name, description, event_date, image_link, event_time) 
+    VALUES ("Tester", "This is a test.", "2016-11-04", "img/38-autumn.png", "8:34");
