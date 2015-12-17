@@ -18,7 +18,7 @@
   }
   .jumbotron{
     text-align: center;
-    background-image: url("48-ice.png");
+    background-image: url("img/48-ice.png");
     background-size: cover;
     margin-bottom: 0;
   }
@@ -30,7 +30,7 @@
     border-radius: 0;
   }
   .middle{
-    background-image: url("49-Comet.png");
+    background-image: url("img/49-Comet.png");
     background-size: cover;
     min-height: 500px;
     margin-top: 0;
