@@ -1,0 +1,25 @@
+.center{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.row{
+    width: 100%;
+}
+
+.event-image{
+    max-height: 300px;
+    width: 100%;
+}
+
+.margintop15{
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 749px)
+{
+    .events{
+        margin-left: 45px;
+    }
+}

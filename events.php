@@ -46,7 +46,7 @@ if($result)
                            </div>";
                     $i = 0;
                 }
-                print "<div class='col-xs-11 col-sm-{$columnNumber} col-md-{$columnNumber}'>
+                print "<div class='col-xs-12 col-sm-{$columnNumber} col-md-{$columnNumber}'>
                     <div class='thumbnail'>
                         <img class='event-image' src='{$image_link}' alt='...'>
                         <div class='caption'>
