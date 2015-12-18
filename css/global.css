@@ -1,3 +1,7 @@
+.navbar-brand{
+    color: #5FB5FF !important;
+}
+
 .center{
     margin: 0 auto;
     width: 50%;
@@ -20,6 +24,6 @@
 @media screen and (max-width: 749px)
 {
     .events{
-        margin-left: 45px;
+        margin-left: 30px;
     }
 }
