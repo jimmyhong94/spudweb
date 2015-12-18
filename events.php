@@ -14,7 +14,10 @@ if($result)
 
         if($totalEvents == 0)
         {
-            print "<div class='center'><h4>There are currently no scheduled events. Request one below!</h4></div>";
+            print "<div class='jumbotron'>
+                    <h1>Currently no events are scheduled.</h1>
+                    <p>Request one below if you have a good event idea!</p>
+                   </div>";
         }
         else
         {
@@ -25,7 +28,7 @@ if($result)
             }
             else
             {
-                $columnNumber = round(10 / $totalEvents, 0, PHP_ROUND_HALF_DOWN); // Either 11, 5 or 3
+                $columnNumber = round(10 / $totalEvents, 0, PHP_ROUND_HALF_DOWN); // Either 10, 5 or 3
             }
             //Create the grid for the events. col-md-1 spaces it so it's more centered.
   
