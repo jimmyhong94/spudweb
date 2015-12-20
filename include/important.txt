@@ -1,0 +1,35 @@
+always use empty or isset for variables that may legitimately not exist
+never use empty or isset for variables that should exist
+
+Getting url
+
+function getUrl()
+{
+    $url = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://' . $_SERVER["SERVER_NAME"] : 'https://' . $_SERVER["SERVER_NAME"];
+    $url .= ( $_SERVER["SERVER_PORT"] !== 80 ) ? ":" . $_SERVER["SERVER_PORT"] : "";
+    $url .= $_SERVER["REQUEST_URI"];
+    return $url;
+}
+
+For what $result returns
+mysqli_result implements Traversable {
+
+/* Properties */
+int $current_field;
+int $field_count; //Returns how many database columns there are
+array $lengths;
+int $num_rows;
+
+/* Methods */
+bool data_seek ( int $offset )
+mixed fetch_all ([ int $resulttype = MYSQLI_NUM ] )
+mixed fetch_array ([ int $resulttype = MYSQLI_BOTH ] )
+array fetch_assoc ( void )
+object fetch_field_direct ( int $fieldnr )
+object fetch_field ( void )
+array fetch_fields ( void )
+object fetch_object ([ string $class_name = "stdClass" [, array $params ]] )
+mixed fetch_row ( void )
+bool field_seek ( int $fieldnr )
+void free ( void )
+}

@@ -5,10 +5,18 @@ event_date: date
 image_link: varchar 64
 event_time: time
 
- 
 Adding event query:
 INSERT INTO events (event_name, description, event_date, image_link, event_time) 
     VALUES ("Tester", "This is a test.", "2016-11-04", "img/38-autumn.png", "8:34");
 
-Delete event
-DELETE FROM events WHERE event_name="TheName";
+Delete event:
+DELETE FROM events WHERE event_name=\"{$event_name}\" AND description=\"{$description}\"
+
+Event Date has coming up:
+SELECT * FROM events WHERE event_date > CURRENT_DATE();
+
+Event Date has passed:
+SELECT * FROM events WHERE event_date < CURRENT_DATE();
+
+Event Date check if event has passed by at least 7 days:
+SELECT * FROM events WHERE event_date < DATE_SUB(NOW(), INTERVAL 7 DAY)

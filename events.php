@@ -79,7 +79,7 @@ else
             }
             //Create the grid for the events. col-md-1 spaces it so it's more centered.
 
-            print "<div class = 'events'>";
+            print "<div class = 'events-box'>";
             print "<div class = 'row margintop15'>";
             print "<div class = 'col-sm-1 col-md-1'>";
             print "</div>";
