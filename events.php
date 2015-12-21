@@ -31,20 +31,29 @@ if (isset($_GET['e']))
     {
         $row = $result->fetch_assoc();
         extract($row);
-        print "<img class = 'event-image' src = '{$image_link}' alt = '...'>";
+        
+        $dbDate = strtotime($event_date);
+        $date = date("D M, j Y", $dbDate); // Format date
+        $dbTime = strtotime($event_time);
+        $time = date('g:i A', $dbTime); // Format time
+        print "<div class = 'jumbotron'>";
+            print "<h1>{$event_name}</h1>";
+        print "</div>";
+        //print "<img class = 'event-image' src = '{$image_link}' alt = '...'>";
         print "<div class = 'caption'>";
-        print "<h3>{$event_name}</h3>";
-        print "<p>{$description}</p>";
-        print "<p>{$event_date}</p>";
-        print "<p>{$event_time}</p>";
-        print "<p>Join Button Here</p>";
+            print "<h3>{$event_name}</h3>";
+            print "<p>{$description}</p>";
+            print "<p>{$date}</p>";
+            print "<p>{$time}</p>";
+            print "<p>Join Button Here</p>";
+        print "</div>";
     }
     else
     {
-        print "<div class = 'jumbotron'>
-                    <h1>This event is invalid.</h1>
-                    <p>Request one below if you have an idea for an event!</p>
-                    </div>";
+        print "<div class = 'jumbotron'>";
+            print "<h1>This event is invalid.</h1>";
+            print "<p>Request one below if you have an idea for an event!</p>";
+        print "</div>";
     }
     $objDatabase->Close();
 }
@@ -78,7 +87,8 @@ else
                 $columnNumber = round(10 / $totalEvents, 0, PHP_ROUND_HALF_DOWN); // Either 10, 5 or 3
             }
             //Create the grid for the events. col-md-1 spaces it so it's more centered.
-
+            print "<div class='middle'>";
+            print "<div class='container'>";
             print "<div class = 'events-box'>";
             print "<div class = 'row margintop15'>";
             print "<div class = 'col-sm-1 col-md-1'>";
@@ -87,12 +97,18 @@ else
             while ($row = $result->fetch_assoc())
             {
                 extract($row);
+                
+                $dbDate = strtotime($event_date);
+                $date = date("D M, j Y", $dbDate); // Format date
+                $dbTime = strtotime($event_time);
+                $time = date('g:i A', $dbTime); // Format time
+                
                 if ($i == 3) // Maximum 3 events per row
                 {
                     //Start a new row with same format
                     print "</div><!--row-->";
                     print "<div class = 'row'>";
-                    print "<div class = 'col-sm-1 col-md-1'>";
+                    print "<div class ='col-sm-1 col-md-1'>";
                     print "</div>";
                     $i = 0;
                 }
@@ -100,10 +116,9 @@ else
                 print "<div class = 'thumbnail'>";
                 print "<img class = 'event-image' src = '{$image_link}' alt = '...'>";
                 print "<div class = 'caption'>";
-                print "<h3>{$event_name}</h3>";
-                print "<p>{$description}</p>";
-                print "<p>{$event_date}</p>";
-                print "<p>{$event_time}</p>";
+                print "<h3 class='eventpage-name'>{$event_name}</h3>";
+                print "<p>{$date}</p>";
+                print "<p>{$time}</p>";
                 print "<p><a href = 'events.php?e={$event_name}' class = 'btn btn-primary' role = 'button'>Details</a></p>";
                 print "</div>";
                 print "</div>";
@@ -117,7 +132,9 @@ else
 
 
         print "<div class = 'row'>";
-        print "<div class = 'col-lg-10'>";
+            print "<div class='col-sm-1 col-md-1'>";
+            print "</div>";
+        print "<div class = 'eventpage-emailrequest col-xs-10 col-sm-9 col-md-9'>";
         print "<div class = 'input-group'>";
         print "<div class = 'input-group-btn'>";
         print "<button type = 'button' class = 'btn btn-default dropdown-toggle' data-toggle = 'dropdown' aria-haspopup = 'true' aria-expanded = 'false'>Action <span class = 'caret'></span></button>";
@@ -133,6 +150,8 @@ else
         print "</div><!--/input-group -->";
         print "</div><!--/.col-lg-6 -->";
         print "</div><!--/.row -->";
+        print "</div><!--/.container -->";
+        print "</div><!--/.middle -->";
         
         $objDatabase->Close();
     }
