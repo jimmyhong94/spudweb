@@ -5,7 +5,7 @@
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="index"><a href="../index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li class="index"><a href="spudweb/index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
         <li class="events"><a href="../events.php"><span class="glyphicon glyphicon-calendar"></span>EVENTS</a></li>
         <li class="projects"><a href="../projects.php"><span class="glyphicon glyphicon-folder-open"></span>PROJECTS</a></li>
         <li class="about"><a href="../about.php"><span class="glyphicon glyphicon-cloud"></span>ABOUT</a></li>
