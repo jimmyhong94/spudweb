@@ -18,21 +18,28 @@
   }
   .jumbotron{
     text-align: center;
-    background-image: url("img/48-ice.png");
+    background: linear-gradient(#9E3833,white) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0;
   }
   .btn{
     border-radius: 0;
+    margin-bottom: 100px;
   }
   .navbar{
     margin-bottom: 0;
     border-radius: 0;
   }
   .middle{
-    background-image: url("img/49-Comet.png");
+    background: linear-gradient(#252525,#8B8B8B) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    min-height: 500px;
+    min-height: 800px;
     margin-top: 0;
     color: #F5F5F5;
   }
