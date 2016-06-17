@@ -1,6 +1,11 @@
 <?php require_once 'include/header.php'; ?>
 <?php require_once 'include/navigation.php'; ?>
 <?php require_once 'include/databaseobj.inc'; ?>
+
+<div class="jumbotron">
+  <h1>EVENTS</h1>
+</div>
+
 <?php
 
 // Delete events older than 7 days
