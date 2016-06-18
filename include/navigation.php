@@ -20,8 +20,8 @@
 </nav>
 
 <script>
-var pathname = window.location.pathname; // Returns path only
-//var url      = window.location.href;     // Returns full URL
+//var pathname = window.location.pathname; // Returns path only
+var url      = window.location.href;     // Returns full URL
 var activeNavigation = '.' + pathname.substr(1, (pathname.length));
 $(document).ready(function() {
     $('.active').addClass('inactive');
