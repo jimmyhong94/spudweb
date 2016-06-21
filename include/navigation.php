@@ -24,7 +24,6 @@ var pathname = window.location.pathname; // Returns path only
 //var url      = window.location.href;     // Returns full URL
 var activeNavigation = '.' + pathname.substr(9, (pathname.length)-13);
 $(document).ready(function() {
-    console.log(activeNavigation);
     $('.active').addClass('inactive');
     $('.active').removeClass('active');
     $(activeNavigation).addClass('active');
