@@ -22,7 +22,7 @@
 <script>
 var pathname = window.location.pathname; // Returns path only
 //var url      = window.location.href;     // Returns full URL
-var activeNavigation = '.' + pathname.substr(10, (pathname.length)-10);
+var activeNavigation = '.' + pathname.substr(10, (pathname.length)-14);
 $(document).ready(function() {
     console.log(activeNavigation);
     $('.active').addClass('inactive');
