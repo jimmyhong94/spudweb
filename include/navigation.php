@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="../index.php">SPUD</a>
+      <a class="navbar-brand" href="index.php">SPUD</a>
     </div>
     <div>
       <ul class="nav navbar-nav">
