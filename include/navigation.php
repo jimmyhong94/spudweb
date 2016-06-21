@@ -27,6 +27,6 @@ $(document).ready(function() {
     console.log(activeNavigation);
     $('.active').addClass('inactive');
     $('.active').removeClass('active');
-    $(activeNavigation).addClass('active');
+    $('\'' + activeNavigation + '\'').addClass('active');
 });
 </script>
