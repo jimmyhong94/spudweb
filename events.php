@@ -18,7 +18,7 @@
     <div class="events-thumbnails"
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="thumbnail">
-            <img class="event-image" src="img/38-Autumn.png" alt="...">
+            <img class="event-image" src="img/38-Autumn.png" alt="autumn">
             <div class="caption">
                 <h3 class="eventpage-name">Hackathon</h3>
                 <p>Sat Mar, 4 2017</p>
