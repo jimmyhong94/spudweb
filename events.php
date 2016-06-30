@@ -5,9 +5,37 @@
 <div class="jumbotron">
   <h1>EVENTS</h1>
 </div>
-
+<div class="middle">
+  <div class="container">
+    <!-- 
+    Use this when there are no events planned. 
+    <h2>Upcoming Events</h2>
+    <div class="well">
+      <p>No events are currently planned at this time.
+      </p>
+    </div>
+    <!-- a -->
+    <div class="events-thumbnails"
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="thumbnail">
+            <img class="event-image" src="img/38-autumn.png" alt="...">
+            <div class="caption">
+                <h3 class="eventpage-name">Hackathon</h3>
+                <p>Sat Mar, 4 2017</p>
+                <p>10:30 AM - 7:30 PM</p>
+                <p><a href="events.php" class="btn btn-primary" role="button">Details</a></p>
+                <p>col-xs-12 Values range from 1-12 12 being the width of the container. (mobile)
+                    col-sm-12 Values range from 1-12. Same concept but for smaller devices. (tablets)
+                    col-md-12 Values range from 1-12 again. Same concept but for desktop. (desktop)</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
 <?php
 
+# Use this once we get the database set up on the server
+/*
 // Delete events older than 7 days
 $objDatabase = new DatabaseObj;
 $db = $objDatabase->Open();
