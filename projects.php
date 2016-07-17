@@ -27,7 +27,7 @@
             To view the Trello for this project <a href="#">Click Here!</a>
         </p>-->
         <h4>What we're using</h4>
-        <a href="https://github.com/SPUDevelopers/Modularity" target="_blank"><img class="projects-giticon" src="img/githubicon.svg"></img></a>
+        <a href="https://github.com/SPUDevelopers/Scrapyard" target="_blank"><img class="projects-giticon" src="img/githubicon.svg"></img></a>
         <a href="https://trello.com/signup" target="_blank"><img class="projects-trelloicon" src="img/trelloicon.png"></img></a>
         <a href="https://www.unrealengine.com/blog" target="_blank"><img class="projects-unrealicon" src="img/unrealicon.png"></img></a>
     </div>
