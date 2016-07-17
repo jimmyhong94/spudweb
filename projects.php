@@ -17,7 +17,7 @@
                 One of the projects that we are currently working on is Scrapyard.
                 Scrapyard is a voxel based game that we are creating
                 using <a href = "https://www.unrealengine.com/what-is-unreal-engine-4" target="_blank">Unreal Engine 4</a>.
-                The game is called modularity because the player will have a modular weapon that allows them
+                The game is called Scrapyard because the player will have a modular weapon that allows them
                 to find, and attach different mods to their  weapon. With these mods the player will be able to
                 create unique weapons with different capabilities.
             </p>
